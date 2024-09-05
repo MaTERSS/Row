@@ -15,13 +15,17 @@ namespace CSLight
     {
         static void Main(string[] args)
         {
-            int row = 52 / 3;
+           int row = 3;
 
-            Console.WriteLine("Полностью заполенных рядов выведется:" + row);
+           int picture = 52;
+           
+           int filledRow = picture / row;
 
-            int remain = 52 % 3;
+            Console.WriteLine("Полностью заполенных рядов выведется:" + filledRow);
 
-            Console.WriteLine("Картинок сверх меры:" + remain);
+            int picturesBeyondMeasure = picture % row;
+
+            Console.WriteLine("Картинок сверх меры:" + picturesBeyondMeasure);
         }
     }
 }
