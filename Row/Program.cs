@@ -15,15 +15,15 @@ namespace CSLight
     {
         static void Main(string[] args)
         {
-           int rows = 3;
+           int picturesInRow = 3;
 
            int pictures = 52;
            
-           int filledRows = pictures / rows;
+           int filledRows = pictures / picturesInRow;
 
             Console.WriteLine("Полностью заполенных рядов выведется:" + filledRows);
 
-            int picturesRemainder = pictures % rows;
+            int picturesRemainder = pictures % picturesInRow;
 
             Console.WriteLine("Картинок сверх меры:" + picturesRemainder);
         }
